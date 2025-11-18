@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-Movies</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">U-Movie</div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <!-- <li><a href="#">Seasons</a></li> -->
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Anime</a></li>
+            <!-- <li><a href="#">Sign In</a></li> -->
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="search" id="movie_search" placeholder="Search Movies" oninput="handleSearchInput()" />
+            <div id="search-results" class="search-results"></div>
+            <button onclick="movies()" class="search-btn">Search</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <img id="poster" style="display: none;"></img>
+            <h1 id="title"></h1>
+            <p id="plot"></p>
+        </div>
+        <div>
+            <h3 id="release"></h3>
+            <h3 id="seasons"></h3>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
