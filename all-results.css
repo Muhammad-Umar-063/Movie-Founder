@@ -1,0 +1,87 @@
+body{
+  background-image: url("bg2.jpg");
+  background-color: rgba(0, 0, 0, 0.813);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* .container {
+  position: relative;
+  background: rgba(17, 25, 40, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+} */
+
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(17, 25, 40, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+/* .container .pagination {
+  position: relative;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  color: #000000;
+} */
+
+.container .pagination {
+  display: flex;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 10px 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+
+.container .pagination li {
+  list-style-type: none;
+  display: inline-block;
+}
+.container .pagination li a {
+  position: relative;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.container .pagination li a:hover,
+.container .pagination li.active a {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#results-page{
+  /* display: flex; */
+  padding-left: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
